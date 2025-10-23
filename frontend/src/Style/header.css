@@ -1,0 +1,160 @@
+.amazon-header {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  padding: 8px 16px;
+  height: 60px;
+  gap: 10px;
+}
+
+/* --- Left Section --- */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.amazon-logo img {
+  width: 100px;
+  object-fit: contain;
+}
+
+.deliver-to {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  gap: 5px;
+}
+
+.locate-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.deliver-text p {
+  font-size: 12px;
+  margin: 0;
+  padding: 0px;
+  color: #ccc;
+}
+
+.deliver-text span {
+  font-weight: bold;
+  color: white;
+  padding: 0px;
+}
+
+/* --- Search Section --- */
+.header-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: 900px;
+}
+
+.search-category {
+  background-color: #e6e6e6;
+  border: none;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.search-input {
+  flex: 1;
+  height: 38px;
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: #febd69;
+  border: none;
+  height: 38px;
+  width: 45px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- Right Section --- */
+.header-right {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+}
+
+.language {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  gap: 4px;
+}
+.language select {
+  background-color: black;
+  color: #ddd;
+  text-decoration: none;
+  border: none;
+}
+
+.flag-icon {
+  width: 20px;
+  border-radius: 2px;
+}
+
+.account,
+.orders {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.account span,
+.orders span {
+  padding: 0px;
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+  font-size: 15px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.cart img {
+  width: 28px;
+  filter: invert(1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .header-search {
+    display: none;
+  }
+  .account p,
+  .orders p {
+    display: none;
+  }
+  .amazon-logo img {
+    width: 80px;
+  }
+}

@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { Component, useState } from "react";
 
 import viteLogo from "/amazon.jpg";
 import "./App.css";
-
+import Carousels from "./Components/carousels.jsx";
+import Header from "./Components/header.jsx";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>Helle this this my Amazon project</>;
+  return (
+    <>
+      <Header />
+      <Carousels />
+    </>
+  );
 }
 
 export default App;
